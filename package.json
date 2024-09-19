@@ -1,0 +1,50 @@
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "cross-env NODE_ENV=production tsx ./hono-entry.node.ts",
+    "lint": "biome lint --write .",
+    "format": "biome format --write .",
+    "prisma:studio": "prisma studio",
+    "prisma:generate": "prisma generate",
+    "shadcn": "pnpm dlx shadcn@latest"
+  },
+  "dependencies": {
+    "@auth/core": "^0.35.0",
+    "@universal-middleware/core": "^0.2.9",
+    "dotenv": "^16.4.5",
+    "@hono/node-server": "^1.13.0",
+    "@universal-middleware/hono": "^0.2.8",
+    "cross-env": "^7.0.3",
+    "hono": "^4.6.1",
+    "tsx": "^4.19.1",
+    "vite": "^5.4.5",
+    "vike": "^0.4.195",
+    "@prisma/client": "^5.19.1",
+    "@vitejs/plugin-react": "^4.3.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vike-react": "^0.5.6",
+    "tailwindcss-animate": "^1.0.7",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.2",
+    "lucide-react": "^0.441.0",
+    "@radix-ui/react-icons": "^1.3.0",
+    "@trpc/server": "^10.45.2",
+    "@trpc/client": "^10.45.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.2",
+    "@biomejs/biome": "1.9.1",
+    "@hono/vite-dev-server": "^0.16.0",
+    "@types/node": "^18.19.14",
+    "prisma": "^5.19.1",
+    "@types/react": "^18.3.6",
+    "@types/react-dom": "^18.3.0",
+    "tailwindcss": "^3.4.11",
+    "postcss": "^8.4.47",
+    "autoprefixer": "^10.4.20"
+  },
+  "type": "module"
+}
